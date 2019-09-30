@@ -3,3 +3,23 @@
     background-color:rgba(0, 0, 0, 0);
     margin-bottom: 0px;
 }
+body {
+    background-image: url(../images/123Street.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    margin: auto;
+    text-align: center;
+}
+li {
+    float: left;
+    list-style: none;
+    margin: auto;
+    display: contents;
+    
+}
