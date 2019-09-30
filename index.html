@@ -1,50 +1,63 @@
-
 <!DOCTYPE html>
-<html lang="en-us">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Street Collector</title>
+	<meta charset="UTF-8">
+	<title>Crystal Collector</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+	<!--links-->
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
 
-        <h1>Street Collector</h1>
-    
-        <div class="container">
-        <p>Please press any key to get started.</p>
-
-        <!-- Presses a crystal image to start the game -->
-        <h4>Wins</h4>
-        <div id="totalWins"></div>
-        <h4>Losses</h4>
-        <div id="totalLosses"></div>
-        <div class="jumbotron"><button id="goal-btn" class="btn btn-primary btn-lg"></button></div>
-        <!--Where the random number will go -->
-        <h1  id="goal-number"></h1>
-        <h4>Total score</h4>
-        <div id="totalScoreGuess"></div>
-       
-        <ul>
-            <li><img src="assets/images/postage20.jpg" style="width:160px;height:130px;margin-left:auto;"></li>
-            <li><img src="assets/images/postage46.jpg" style="width:160px;height:130px;margin-right:auto;"></li>
-            <li><img src="assets/images/postage49.jpg" style="width:160px;height:130px;margin :auto;"></li>
-            <li><img src="assets/images/postage499.jpg" style="width:160px;height:130px;margin:auto;"></li>
-        </ul>
+    <h1 class="text-center">SESAMSTRASSE COLLECTOR</h1>
 
 
-    </div>
+<div class="container">
 
-<!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>    
-    <script src="assets/javascript/game.js"></script>
+	          	<div class="panel-body">
+                        You will be given a random number at the start of the game.
+                        There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your total score.
+                    <br>
+                         You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+                         The value of each crystal is hidden from you until you click on it.
+					<br>
+						 Each time when the game starts, the game will change the values of each crystal.
+					<br>
+				</div>
+		</div>
+		<div class="col-md-6">
+			<div class="row">
+				<div class="col-md-4 goal-number">
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-4 points-counter">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 strasse-images">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 total-score">
+					<p>
+						Your total score is:
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 score-goal">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>

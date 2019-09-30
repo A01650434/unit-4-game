@@ -1,8 +1,4 @@
-.jumbotron {
-    padding: 0px 0px ;
-    background-color:rgba(0, 0, 0, 0);
-    margin-bottom: 0px;
-}
+
 body {
     background-image: url(../images/123Street.png);
     background-repeat: no-repeat;
@@ -12,14 +8,35 @@ body {
     display: flex;
     font-family: 'Courier New', Courier, monospace;
 }
-.container {
-    margin: auto;
-    text-align: center;
+
+
+.goal-number {
+	font-size: 30px;
+	background-color: #F8CF9C;
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 4px;
 }
-li {
-    float: left;
-    list-style: none;
-    margin: auto;
-    display: contents;
-    
+
+.points-counter {
+	background-color: #9CE7F8;
+	border-style: solid;
+	border-color: #ddd;
+	border-width: 4px;
+}
+
+.strasse-images {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.total-score {
+	color: white;
+	background-color: #4aaaa5;
+}
+
+.score-goal {
+	color: white;
+	background-color: #4aaaa5;
+	font-size: 30px;
 }

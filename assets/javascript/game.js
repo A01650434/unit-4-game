@@ -1,34 +1,58 @@
+// my var
 
-
-
+var numberToGuess = "";
 var wins = 0;
 var losses = 0;
-var numberToGuess = "";
 var counter = 0;
+var sesameImages = ["./assets/images/postage20.jpg", "./assets/images/postage46.jpg", "./assets/images/postage49.jpg", "./assets/images/postage499.jpg"];
 
+// Functions
 
+	function randomNumberToGuess () {
+		numberToGuess = Math.floor(Math.random() * 102) + 19;
+	}
 
+	function restartGame () {
+		for (var i = 0; i < sesameImages.length; i++) {
+			var strasse = $("<img>");
+			strasse.addClass("strasse");
+			strasse.attr("src", sesameImages[i]);
+		  strasse.attr("value", (Math.floor(Math.random() * 12) + 1));
+			strasse.attr("height", "100");
+			$(".strasse-images").append(strasse);
+		}
+	}
 
-$(document).ready(function() {
+	function restartValues () {
+		$(".goal-number").html(numberToGuess);
+		$(".points-counter").html("<p>Wins: " + wins + "</p>" + "<p>Losses: " + losses + "</p>");
+		$(".score-goal").html(counter);
+		$(".strasse-images").empty();
+	}
 
-    // Notice I didn't set $(".jumbotron") to a var this time?
-    // If you only plan to use that selector once it doesn't need to be a var
-    $("#goal-btn").on("click", function() {
+	function totalCeroCounter  () {
+		randomNumberToGuess ();
+		counter = 0;
+		restartValues ();
+		restartGame ();
+	}
 
-      // ... we generate a random number
-    var random = Math.floor(Math.random() * 100) + 19;
+  randomNumberToGuess();
+	restartValues ();
+	restartGame ();
+	
+// Click Function
+function strasseClick () {
+  
+  counter += parseInt($(this).attr("value"));
+  $(".score-goal").html(counter);
+  if (counter == numberToGuess) {
+    wins++;
+    totalCeroCounter();
+  } else if (counter > numberToGuess) {
+    losses++;
+    totalCeroCounter();
+  };
+};
 
-      // ... and then dump the goal number into our goal-number div.
-     $("#goal-number").text(random);
-
-    });
-
-     });
-
-$(document).ready(function() {
-    var list = $('li').hide();
-     var i = 0;
-     (function showImg() {
-         list.eq(i++).fadeIn(400, showImg);
-            })();
-    });
+$(document).on("click", ".strasse", strasseClick);
