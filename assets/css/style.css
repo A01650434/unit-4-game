@@ -11,32 +11,39 @@ body {
 
 
 .goal-number {
-	font-size: 30px;
-	background-color: #F8CF9C;
-	border-style: solid;
-	border-color: #ddd;
-	border-width: 4px;
+	font-size: 40px;
+	background-color: yellowgreen;
+	margin-top: 20px;
 }
 
 .points-counter {
-	background-color: #9CE7F8;
-	border-style: solid;
-	border-color: #ddd;
-	border-width: 4px;
+	background-color: yellowgreen;
+	margin-top: 20px;
 }
 
 .strasse-images {
 	margin-top: 10px;
 	margin-bottom: 10px;
+	
+
 }
 
 .total-score {
 	color: white;
-	background-color: #4aaaa5;
+	background-color: yellowgreen;
+	margin-top: 10px;
 }
 
 .score-goal {
 	color: white;
-	background-color: #4aaaa5;
-	font-size: 30px;
+	background-color: yellowgreen;
+	font-size: 40px;
+	margin-top: 10px;
+}
+.panel-body{
+	background-color: coral;
+	font-size:medium;
+	margin-top: 30px;
+	margin: 120px 99px 10px 40px;
+
 }

@@ -4,7 +4,7 @@ var numberToGuess = "";
 var wins = 0;
 var losses = 0;
 var counter = 0;
-var sesameImages = ["./assets/images/postage20.jpg", "./assets/images/postage46.jpg", "./assets/images/postage49.jpg", "./assets/images/postage499.jpg"];
+var sesameImages = ["./assets/images/strasse.jpg", "./assets/images/ONEWAY.jpg", "./assets/images/NYC63.jpg", "./assets/images/broadway.jpg"];
 
 // Functions
 
